@@ -49,7 +49,7 @@ console.log(allowedPets);
 let result;
 
 if (adventurous === true) {
-  result = 'Adventurous is great!';
+  result = 'Adventures are great!';
 } else {
   result = 'How about we stay home?';
 }
@@ -59,7 +59,12 @@ console.log(result);
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
+let diceRoll = 'Try again later.';
 
+if (luckyNumber === 2 && adventurous === true) {
+  diceRoll = 'Roll the dice!';
+}
+console.log(diceRoll);
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
 //      if the value of `pets` is less than the value of `allowedPets`,
@@ -68,6 +73,16 @@ console.log(result);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
+let petStatus;
+
+if (pets < allowedPets) {
+  petStatus = 'I can have more pets';
+} else if (pets === allowedPets) {
+  petStatus = 'I have enough pets';
+} else if (pets > allowedPets) {
+  petStatus = 'Oh no, I have too many pets!';
+}
+console.log(petStatus);
 
 
 // STRETCH GOALS:
@@ -78,6 +93,15 @@ console.log(result);
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
 
+let mostPets;
+
+if (pets > friendsPets) {
+  mostPets = pets;
+} else {
+  mostPets = friendsPets;
+}
+console.log(mostPets);
+
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
@@ -86,6 +110,7 @@ console.log(result);
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
