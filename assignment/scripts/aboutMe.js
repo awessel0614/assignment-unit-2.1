@@ -12,7 +12,7 @@ let fullName = firstName + ' ' + lastName;
 console.log(fullName);
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let luckyNumber = 9;
+let luckyNumber = 3;
 console.log(luckyNumber);
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -46,6 +46,8 @@ console.log(allowedPets);
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
+
+
 let result;
 
 if (adventurous === true) {
@@ -54,6 +56,8 @@ if (adventurous === true) {
   result = 'How about we stay home?';
 }
 console.log(result);
+
+
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
@@ -111,9 +115,35 @@ console.log(mostPets);
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 
+let luckyResult;
+
+switch (luckyNumber) {
+  case 1: {
+    luckyResult = 'First is the worst'
+    break
+  }
+  case 2: {
+    luckyResult = 'Second is the best'
+    break
+  }
+  case 3: {
+    luckyResult = 'Third is the one with the polka dot dress'
+    break
+  }
+  default:
+    luckyResult = "Luck is what happens when preparation meets opportunity"
+    break
+}
+console.log(luckyResult);
+
+
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
+
+adventurous ? result = "Adventures are great!" : result = "How about we stay home?"
+
+console.log(result);
 
 
 
